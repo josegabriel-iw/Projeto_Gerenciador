@@ -1,8 +1,8 @@
-# TaskManager Pro
+# Gerenciador de Tarefas
 
 Sistema de gerenciamento de tarefas com suporte a prioridades e lembretes, desenvolvido com orientação a objetos.
 
-## 🎯 Objetivo
+## Objetivo
 
 Auxiliar o usuário na organização de tarefas do dia a dia, com possibilidade de configurar prazos, prioridades e lembretes. O sistema utiliza uma interface gráfica simples para facilitar a interação.
 
