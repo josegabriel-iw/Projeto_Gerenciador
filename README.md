@@ -49,7 +49,7 @@ GerenciadordeTarefas/
 ```
 ## 📷 Diagrama de Classes
 
-![Diagrama de Classes](Diagrama_de_Classes.png)
+![Diagrama de Classes](Diagrama.png)
 
 
 ## 🐍 Requisitos
