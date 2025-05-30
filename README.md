@@ -37,7 +37,7 @@ O sistema verifica periodicamente (a cada minuto) lembretes configurados e exibe
 ## 📁 Estrutura do Projeto
 
 ```
-TaskManagerPro/
+GerenciadordeTarefas/
 ├── main.py
 ├── README.md
 └── package/
@@ -47,6 +47,50 @@ TaskManagerPro/
     ├── serializador.py
     └── interface.py
 ```
+## 📷 Diagrama de Classes
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#f0f0f0', 'edgeLabelBackground':'#fff', 'tertiaryColor': '#dcd0ff'}}}%%
+usecaseDiagram
+    title Diagrama de Casos de Uso - TaskManager Pro
+    actor Usuário as user
+    
+    package "Sistema" {
+        usecase "Adicionar Tarefa" as UC1
+        usecase "Editar Tarefa" as UC2
+        usecase "Remover Tarefa" as UC3
+        usecase "Marcar como Concluída" as UC4
+        usecase "Visualizar Tarefas" as UC5
+        usecase "Filtrar Tarefas" as UC6
+        usecase "Ordenar Tarefas" as UC7
+        usecase "Definir Lembrete" as UC8
+        usecase "Receber Notificação" as UC9
+        
+        user --> UC1
+        user --> UC2
+        user --> UC3
+        user --> UC4
+        user --> UC5
+        user --> UC6
+        user --> UC7
+        user --> UC8
+        user --> UC9
+        
+        UC5 --> UC6
+        UC5 --> UC7
+        
+        note right of UC1
+        Campos obrigatórios:
+        - Título
+        - Data limite
+        - Prioridade
+        end note
+        
+        note left of UC9
+        O sistema verifica
+        lembretes a cada minuto
+        end note
+    }
 
 ## 🐍 Requisitos
 
